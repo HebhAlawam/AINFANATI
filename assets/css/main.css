@@ -23314,9 +23314,36 @@ html[tp-theme=tp-theme-light] .tp-offcanvas-update-bg-2 .tp-main-menu-mobile > n
 .tb-right{display:inline-flex; align-items:center; gap:10px; min-width:0;}
 .tb-social{display:inline-flex; gap:10px;}
 .tb-social a{color:var(--brand-cream); opacity:.85;} .tb-social a:hover{opacity:1;}
-.tb-call{display:inline-flex; align-items:center; gap:8px; font-weight:600;
-  background:var(--brand-cream); color:#1b1b1b; padding:6px 10px; border-radius:8px; white-space:nowrap;}
-.tb-call i{font-size:14px;}
+
+.tb-call {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  background: var(--brand-cream); /* لون الخلفية */
+  color: var(--AINFANATI-color-2) !important;     /* لون النص أسود غامق */
+  padding: 6px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+  text-decoration: none;          /* يشيل الخط السفلي */
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.tb-call i {
+  font-size: 14px;
+  color: var(--AINFANATI-color-2) !important; /* يخلي الأيقونة نفس اللون */
+}
+
+.tb-call:hover {
+  background: var(--AINFANATI-color-3);     /* عكس الألوان عند الهوفر */
+  color: var(--brand-cream) !important;
+}
+
+.tb-call:hover i {
+  color: var(--brand-cream) !important;
+}
+
+
 
 /* ارتفاع التوب بار (نستخدم متغير قابل للتغيير) */
 :root{ --topbar-h: 44px; }
